@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
 </head>
@@ -13,48 +14,54 @@
     <figure>
         <img src="assets/leaves.avif" alt="An image with leaves">
         <figcaption>Photo by <a class="credits" href="https://unsplash.com/@frostroomhead">Rodion Kutsaiev</a> | <a
-                class="credits"
-                href="https://unsplash.com">Unsplash</a></figcaption>
+                class="credits" href="https://unsplash.com">Unsplash</a></figcaption>
     </figure>
     <main>
-        <h2>This is not a real online service! You know you need something like this in your life to help you realize
-            your
-            deepest dreams. Sign up <em>now</em> to get started.</h2>
-        <h2>You <em>know</em> you want to.</h2>
+        <section>
+            <h3>This is not a real online service! You know you need something like this in your life to help you
+                realize your deepest dreams. Sign up <em>now</em> to get started.</h3>
+            <h3>You <em>know</em> you want to.</h3>
+        </section>
         <form id="sign-up" action="" method="POST">
-            <section>
-                <h2>Let's do this!</h2>
+            <h3>Let's do this!</h3>
+            <section class="form-body">
+
+                <div class="label-wrapper">
+                    <label for="first_name" class="input-left">
+                        <span>FIRST NAME</span><br>
+                        <input type="text" name="first_name" id="first_name">
+                    </label>
+                    <label for="last_name" class="input-right">
+                        <span>LAST NAME</span><br>
+                        <input type="text" name="last_name" id="last_name">
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <label for="email" class="input-left">
+                        <span>EMAIL</span><br>
+                        <input type="email" name="email" id="email">
+                    </label>
+                    <label for="phone_number" class="input-right">
+                        <span>PHONE NUMBER</span><br>
+                        <input type="tel" name="phone_number" id="phone_number">
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <label for="password" class="input-left">
+                        <span>PASSWORD</span><br>
+                        <input type="password" name="password" id="password">
+                    </label>
+                    <label for="confirm_password" class="input-right">
+                        <span>CONFIRM PASSWORD</span><br>
+                        <input type="password" name="confirm_password" id="confirm_password">
+                    </label>
+                </div>
             </section>
-            <section>
-                <label for="first_name">
-                    <span>FIRST Name</span>
-                    <input type="text" name="first_name" id="first_name">
-                </label>
-                <label for="last_name">
-                    <span>LAST NAME</span>
-                    <input type="text" name="last_name" id="last_name">
-                </label>
-                <label for="email">
-                    <span>EMAIL</span>
-                    <input type="email" name="email" id="email">
-                </label>
-                <label for="phone_number">
-                    <span>PHONE NUMBER</span>
-                    <input type="tel" name="phone_number" id="phone_number">
-                </label>
-                <label for="password">
-                    <span>PASSWORD</span>
-                    <input type="password" name="password" id="password">
-                </label>
-                <label for="confirm_password">
-                    <span>CONFIRM PASSWORD</span>
-                    <input type="password" name="confirm_password" id="confirm_password">
-                </label>
-            </section>
+
         </form>
         <section>
             <button type="submit" form="sign-up">Create Account</button>
-            <p>Already have an account? <a href="">Log in</a></p>
+            <p>Already have an account? <a href="" class="change-form">Log in</a></p>
         </section>
     </main>
 </body>
