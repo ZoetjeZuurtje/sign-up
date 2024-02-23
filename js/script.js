@@ -6,8 +6,10 @@ const confirmPwdElement = document.querySelector('#confirm_password');
 function validatePassword() {
     if (passwordElement.value != confirmPwdElement.value) {
         confirmPwdElement.setCustomValidity("Passwords Don't Match");
+        confirmPwdElement.classList.add('error');
     } else {
         confirmPwdElement.setCustomValidity('');
+        confirmPwdElement.classList.remove('error');
     }
 }
 
