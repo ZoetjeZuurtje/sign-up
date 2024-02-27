@@ -108,11 +108,15 @@ label {
 label span {
     color: var(--label-color);
     font-size: 0.8rem;
+    font-weight: bold;
 }
 
 input {
     border-radius: 3px;
     border: solid var(--input-border-color) 1px;
+    font-size: 0.8rem;
+    padding: 0.4rem;
+    width: 13rem;
 }
 
 input:focus {
@@ -126,7 +130,7 @@ button {
     font-weight: bold;
     font-size: 0.9rem;
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 button:hover {
