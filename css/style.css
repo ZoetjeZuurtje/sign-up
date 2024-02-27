@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Norse Bold';
+    src: url('../assets/fonts/Norse-Bold.otf') format('opentype');
+}
+
 :root {
     --button-color: #596D48;
     --input-border-color: #E5E7EB;
@@ -10,35 +15,51 @@
 body {
     display: flex;
     height: 100vh;
-    overflow: hidden;
 
     font-family: Arial, Helvetica, sans-serif;
     color: var(--text-color);
 }
 
-figure {
+.image-container {
+    position: relative;
+
     margin: 0;
     padding: 0;
     width: 40%;
     flex: auto;
+}
 
-    img {
-        height: 100%;
-        width: 100%;
-    }
+.image-container > * {
+    position: absolute;
+    width: 100%;
+}
 
-    figcaption {
-        height: 0;
-        font-size: 12px;
-        text-align: center;
-        position: relative;
-        bottom: 30px;
-        color: var(--input-border-color);
-    }
+.image-container img {
+    height: 100%;
+}
+
+.banner-text {
+    top: 200px;
+    height: 100px;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Norse Bold', 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: white;
+}
+
+.credits {
+    bottom: 10px;
+    text-align: center;
 }
 
 .credits,
-figcaption {
+.credits a {
     color: var(--input-border-color);
 }
 
